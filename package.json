@@ -1,11 +1,15 @@
 {
-  "name": "lexorank",
-  "_id": "lexorank@1.0.5",
-  "version": "1.0.5",
+  "name": "@dalet-oss/lexorank",
+  "version": "1.0.0-DEV",
   "description": "A reference implementation of a list ordering system like JIRA's Lexorank algorithm",
   "author": {
-    "name": "kvandake"
+    "name": "Oliver Lockwood"
   },
+  "contributors": [
+    "Oliver Lockwood (@oliverlockwood)",
+    "Manan Shah (@mananrshah)",
+    "@kvandake"
+  ],
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,24 +19,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kvandake/lexorank-ts.git"
+    "url": "git+https://github.com/dalet-oss/lexorank-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/kvandake/lexorank-ts/issues"
+    "url": "https://github.com/dalet-oss/lexorank-ts/issues"
   },
-  "homepage": "https://github.com/kvandake/lexorank-ts",
+  "homepage": "https://github.com/dalet-oss/lexorank-ts",
   "scripts": {
     "clean": "rimraf lib",
     "build": "yarn run clean && tsc",
     "test": "jest",
-    "lint": "eslint -c .eslintrc.js --ext .ts ./src",
-    "prepublishOnly": "yarn test && yarn run lint",
-    "preversion": "yarn run lint",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
+    "lint": "eslint -c .eslintrc.js --ext .ts ./src"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",

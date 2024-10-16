@@ -1,18 +1,21 @@
 # LexoRank on Typescript
 A reference implementation of a list ordering system like [JIRA's Lexorank algorithm](https://www.youtube.com/watch?v=OjQv9xMoFbg).
 
-[![npm version](https://badge.fury.io/js/lexorank.svg)](https://badge.fury.io/js/lexorank)
+[![npm version](https://badge.fury.io/js/@dalet-oss%2Flexorank.svg)](https://badge.fury.io/js/@dalet-oss%2Flexorank)
+
+This was forked from [https://github.com/kvandake/lexorank-ts](https://github.com/kvandake/lexorank-ts) in October 2024
+because, unfortunately, the maintainer appears to have abandoned their project.
 
 ## Getting Started
 
 Npm
 ```sh
-npm install lexorank
+npm install @dalet-oss/lexorank
 ```
 
 Yarn
 ```sh
-yarn add lexorank
+yarn add @dalet-oss/lexorank
 ```
 
 ## Storyboard
@@ -24,7 +27,7 @@ yarn add lexorank
 
 
 ```typescript
-import {LexoRank} from "lexorank";
+import { LexoRank } from '@dalet-oss/lexorank';
 
 // min
 const minLexoRank = LexoRank.min();
@@ -39,7 +42,7 @@ const parsedLexoRank = LexoRank.parse('0|0i0000:');
 ### Public methods
 
 ```typescript
-import {LexoRank} from "lexorank";
+import { LexoRank } from '@dalet-oss/lexorank';
 
 // any lexoRank
 const lexoRank = LexoRank.middle();
@@ -58,7 +61,7 @@ const lexoRankStr = lexoRank.toString();
 
 LexRank calculation based on existing LexoRanks.
 ```typescript
-import {LexoRank} from "lexorank";
+import { LexoRank } from '@dalet-oss/lexorank';
 
 // any lexorank
 const any1LexoRank = LexoRank.min();
