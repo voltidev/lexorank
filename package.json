@@ -2,13 +2,20 @@
   "name": "@dalet-oss/lexorank",
   "version": "1.0.0-DEV",
   "description": "A reference implementation of a list ordering system like JIRA's Lexorank algorithm",
-  "author": {
-    "name": "Oliver Lockwood"
-  },
+  "author": "Dalet OSS (https://github.com/dalet-oss)",
   "contributors": [
-    "Oliver Lockwood (@oliverlockwood)",
-    "Manan Shah (@mananrshah)",
-    "@kvandake"
+    {
+      "name": "Oliver Lockwood",
+      "url": "https://github.com/oliverlockwood"
+    },
+    {
+      "name": "Manan Shah",
+      "url": "https://github.com/mananrshah"
+    },
+    {
+      "name": "Alexey Nikitin",
+      "url": "https://github.com/kvandake"
+    }
   ],
   "license": "MIT",
   "main": "lib/index.js",
