@@ -69,6 +69,8 @@ const any1LexoRank = LexoRank.min();
 const any2LexoRank = any1LexoRank.genNext().genNext();
 // calculate between
 const betweenLexoRank = any1LexoRank.between(any2LexoRank);
+// calculate between lexoRanks
+const betweenLexoRanks = any1LexoRank.multipleBetween(any2LexoRank, 5);
 ```
 
 ## Related projects
