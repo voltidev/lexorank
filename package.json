@@ -1,22 +1,7 @@
 {
-  "name": "@dalet-oss/lexorank",
-  "version": "1.0.0-DEV",
-  "description": "A reference implementation of a list ordering system like JIRA's Lexorank algorithm",
-  "author": "Dalet OSS (https://github.com/dalet-oss)",
-  "contributors": [
-    {
-      "name": "Oliver Lockwood",
-      "url": "https://github.com/oliverlockwood"
-    },
-    {
-      "name": "Manan Shah",
-      "url": "https://github.com/mananrshah"
-    },
-    {
-      "name": "Alexey Nikitin",
-      "url": "https://github.com/kvandake"
-    }
-  ],
+  "name": "@ivanvolti/lexorank",
+  "version": "1.0.0",
+  "description": "Implementation of a list ordering system like JIRA's Lexorank algorithm",
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -34,7 +19,7 @@
   "homepage": "https://github.com/dalet-oss/lexorank-ts",
   "scripts": {
     "clean": "rimraf lib",
-    "build": "yarn run clean && tsc",
+    "build": "pnpm clean && tsc",
     "test": "jest",
     "lint": "eslint -c .eslintrc.js --ext .ts ./src"
   },
@@ -64,8 +49,7 @@
     "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.8",
-    "typescript": "^4.8.2",
-    "yarn": "^1.22.19"
+    "typescript": "^4.8.2"
   },
   "files": [
     "lib/**/*"
